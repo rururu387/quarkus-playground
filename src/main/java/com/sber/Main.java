@@ -1,13 +1,12 @@
 package com.sber;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.annotation.Configuration;
+import io.quarkus.runtime.Quarkus;
+import io.quarkus.runtime.annotations.QuarkusMain;
 
-@Configuration
-@EnableAutoConfiguration
+@QuarkusMain
 public class Main {
     public static void main(String[] args) {
-        SpringApplication.run(Main.class, args);
+        System.out.println("Running main method");
+        Quarkus.run(args);
     }
 }

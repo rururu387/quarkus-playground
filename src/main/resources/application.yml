@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:.\src\main\resources\db\incident
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
